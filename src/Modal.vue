@@ -439,6 +439,11 @@ export default {
      * but AfterEvents ('opened' and 'closed') are moved to `watch.visible`.
      */
     toggle (state, params) {
+      console.log('in modal toggle')
+      console.log(state)
+      console.log(params)
+      console.log(this)
+      console.log('==========')
       const { reset, scrollable, visible } = this
       if (visible === state) return
       const beforeEventName = visible ? 'before-close' : 'before-open'

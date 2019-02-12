@@ -27,6 +27,11 @@ export default {
   },
   methods: {
     add (modal, params, config) {
+      console.log('adding dynamic modal')
+      console.log(modal)
+      console.log(params)
+      console.log(config)
+      console.log('==========')
       let id = this.uid++
       config = config ? Object.assign({}, config) : {};
       if (!config.name) {
@@ -39,6 +44,7 @@ export default {
         config: config
       })
       this.$nextTick(() => {
+        console.log('showing modal in nextTick')
         this.$modal.show(config.name)
       })
     },
