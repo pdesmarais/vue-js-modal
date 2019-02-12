@@ -19,7 +19,7 @@
     "url": "https://github.com/euvl/vue-js-modal/issues"
   },
   "scripts": {
-    "build:client": "webpack --config ./build/webpack.client.config.js --progress --hide-modules",
+    "build:client": "webpack -p --config ./build/webpack.client.config.js --progress --hide-modules",
     "build:ssr": "webpack --config ./build/webpack.ssr.config.js --progress --hide-modules",
     "build:ssr-no-css": "webpack --config ./build/webpack.ssr-no-css.config.js --progress --hide-modules",
     "lint": "eslint --ext .js,.vue src test/unit/specs",
